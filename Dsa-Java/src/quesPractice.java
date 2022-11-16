@@ -3,8 +3,8 @@ public class quesPractice {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner sc=new Scanner(System.in);
-		int n=sc.nextInt();
+//		Scanner sc=new Scanner(System.in);
+//		int n=sc.nextInt();
 //		int num1[]=new int[n];
 //		
 //		for(int i=0;i<n;i++) {
@@ -47,11 +47,28 @@ public class quesPractice {
 //			System.out.println(ans);
 //		
 		
+		String str1="abcd";
+		String str2="abdc";
 		
-		
-		
-		
-		
+//		char []ch=new char[26];
+//        if(str1.length()!=str2.length()){
+//            System.out.println("False");
+//        }
+//        for(int i=0;i<ch.length;i++){
+//          ch[str1.charAt(i)-'a']++;
+//          ch[str2.charAt(i)-'a']--;
+//        }
+        int c=0;
+		for(int i=0;i<str1.length();i++) {
+			if(str1.charAt(i)!=str2.charAt(i)) {
+				System.out.println(true);
+				c++;
+				break;
+				
+			}
+			c=0;
+		}
+		System.out.println(c);
 	       
 }
 

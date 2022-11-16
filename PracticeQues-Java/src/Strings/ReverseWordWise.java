@@ -2,16 +2,14 @@ package Strings;
 
 import java.util.Scanner;
 
-public class reverseAnArr {
-
-	public static void main(String[] args) {
-		Scanner s = new Scanner(System.in);
-		String str = s.nextLine();
-		String s2 = "";
+public class ReverseWordWise {
+	public static String reverseWordWise(String str) {
+		// Write your code here
+       
+        String s2 = "";
 		for (int i = 0; i < str.length(); i++) {
 			s2 = str.charAt(i) + s2;
 		}
-		
 		String string = "";
 		int k = 0;
 		for (int i = 0; i < s2.length(); i++) {
@@ -23,8 +21,7 @@ public class reverseAnArr {
 				}
 				string += " ";
 				k = i + 1;
-			}
-
+            }
 
 		}
 				
@@ -32,7 +29,17 @@ public class reverseAnArr {
 			string=string+s2.charAt(j);
 		}
 
-		System.out.println(string);
+	   return string;
+
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner s=new Scanner(System.in);
+		String str=s.nextLine();
+		
+		System.out.println(reverseWordWise(str));
+
 
 	}
 
